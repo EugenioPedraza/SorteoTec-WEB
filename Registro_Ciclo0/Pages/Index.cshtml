@@ -1,0 +1,127 @@
+﻿@page
+@model Registro_Ciclo0.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<body>
+
+    <section class="Index_size">
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#imageCarousel" data-slide-to="1"></li>
+                <li data-target="#imageCarousel" data-slide-to="2"></li>
+            </ul>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="~/img/banner1.jpeg" alt="Image 1" class="d-block w-100 h-25">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/banner2.jpeg" alt="Image 2" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="~/img/banner3.jpeg" alt="Image 3" class="d-block w-100">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+
+        <div class="countdown-container contador text-center my-5">
+            <h2 class="page_font">Contador evento especial</h2>
+            <p class="page_font" id="demo">00:00:00:00</p>
+        </div>
+
+
+
+        <div class="container my-5">
+            <h2 class="text-center mb-4">Noticias</h2>
+            <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="~/img/banner1.jpeg" class="d-block w-100" alt="News 1">
+                            </div>
+                            <div class="col-md-8 page_font">
+                                <p class="page_font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="~/img/banner2.jpeg" class="d-block w-100" alt="Noticia 2">
+                            </div>
+                            <div class="col-md-8 page_font">
+                                <p class="page_font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="~/img/banner3.jpeg" class="d-block w-100" alt="Noticia 3">
+                            </div>
+                            <div class="col-md-8">
+                                <p class="page_font">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+
+
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="~/img/section1.jpeg" alt="Section 1 Image" class="img-fluid mb-2" />
+                    <a class="btn btn-primary w-100" asp-page="/Juegos">Jugar</a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <img src="~/img/section2.jpeg" alt="Section 2 Image" class="img-fluid mb-2" />
+                    <a class="btn btn-primary w-100" asp-page="/Premios">Premios</a>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <img src="~/img/section3.jpeg" alt="Section 3 Image" class="img-fluid mb-2" />
+                    <a class="btn btn-primary w-100" asp-page="/clasificacion_ciclo0">Clasificación</a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <script src="~/Pages/script.js"></script>
+
+
+    </section>
+
+    
+
+</body>
+
+</html>
+

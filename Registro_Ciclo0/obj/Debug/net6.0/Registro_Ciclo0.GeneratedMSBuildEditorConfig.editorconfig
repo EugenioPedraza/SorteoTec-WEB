@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Registro_Ciclo0
+build_property.RootNamespace = Registro_Ciclo0
+build_property.ProjectDir = C:\Users\jorge\Downloads\downloads_2.0\docs\code\KND PRESENTACION DKSJHFKDJFS\ciclo__final\ciclo__final_v1\Registro_Ciclo0\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\jorge\Downloads\downloads_2.0\docs\code\KND PRESENTACION DKSJHFKDJFS\ciclo__final\ciclo__final_v1\Registro_Ciclo0
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/clasificacion_ciclo0.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcY2xhc2lmaWNhY2lvbl9jaWNsbzAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Juegos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSnVlZ29zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Premios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlbWlvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/RegistroUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0cm9Vc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Shared/Components/GemCount/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXENvbXBvbmVudHNcR2VtQ291bnRcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5u0ulcd1w0
+
+[C:/Users/jorge/Downloads/downloads_2.0/docs/code/KND PRESENTACION DKSJHFKDJFS/ciclo__final/ciclo__final_v1/Registro_Ciclo0/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2ip765bwh2

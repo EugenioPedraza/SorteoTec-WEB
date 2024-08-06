@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SorteoTec - Inicio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Registro_Ciclo0.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container d-flex align-items-center c_navbar">
+                <a asp-page="/Index">
+                    <img src="/img/logo.png" class="navbar-brand logo" asp-area="" asp-page="/Index">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center index-style menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item text-align">
+                            <a class="nav-link nav-color" asp-area="" asp-page="/Juegos">Jugar</a>
+                        </li>
+                        <li class="nav-item text-align">
+                            <a class="nav-link nav-color" asp-area="" asp-page="/clasificacion_ciclo0">Clasificación</a>
+                        </li>
+                        <li class="nav-item text-align">
+                            <a class="nav-link nav-color" asp-area="" asp-page="/Premios">Premios</a>
+                        </li>
+                        <li class="text-align icon-align">
+                            <a asp-page="/Logout">
+                                <img src="~/img/usuario.png" class="img-background" alt="Usuario" width="50px" height="50px" class="img-button" />
+                            </a>
+                        </li>
+
+                        @await Component.InvokeAsync("GemCount")
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+</body>
+<footer class="border-top footer text-muted">
+    <div class="container">
+        <div class="page-content">
+            <div class="container">
+                <div class="row text-center" style="text-align: start;">
+                    <div class="col">
+                        <p>Contactanos</p>
+                        <ul class="list-unstyled footer-text">
+                            <li><p>WhatsApp 81 8086 3098</p></li>
+                            <li><p>Llamanos 81 1001 7539</p></li>
+                            <li><p>ventas.sorteos@servicios.sorteostec.mx</p></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>Legales</p>
+                        <ul class="list-unstyled footer-text">
+                            <li><p>Permisos de gobernacion</p></li>
+                            <li><p>Terminos y condiciones</p></li>
+                            <li><p>Avisos de privacidad</p></li>
+                        </ul>
+                        <ul class="nav d-flex flex-row list-unstyled icon-style">
+                            <li class="nav-item text-align">
+                                <a href="https://www.instagram.com/sorteostec/">
+                                    <img src="~/img/instagram.svg" alt="Intagram" width="30px" height="30px" class="img-button img-margin" />
+                                </a>
+                            </li>
+                            <li class="nav-item text-align">
+                                <a href="https://twitter.com/SorteosTec">
+                                    <img src="~/img/twitter.svg" alt="Twitter" width="30px" height="30px" class="img-button img-margin" />
+                                </a>
+                            </li>
+                            <li class="nav-item text-align">
+                                <a href="https://www.youtube.com/sorteostec">
+                                    <img src="~/img/youtube.svg" alt="YouTube" width="30px" height="30px" class="img-button img-margin" />
+                                </a>
+                            </li>
+                            <li class="nav-item text-align">
+                                <a href="https://www.facebook.com/SorteosTec/">
+                                    <img src="~/img/facebook.svg" alt="FaceBook" width="30px" height="30px" class="img-button img-margin" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <p>Servicios</p>
+                        <ul class="list-unstyled footer-text">
+                            <li><p class="not-bold">Historial de ganadores</p></li>
+                            <li><p class="not-bold">Comunicados</p></li>
+                            <li><p class="not-bold">Sorteos</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+
+@await RenderSectionAsync("Scripts", required: false)

@@ -1,0 +1,39 @@
+﻿@page
+@model Registro_Ciclo0.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<body>
+    <section class="login">
+        <div class="Login-wrapper">
+            <div class="login-container">
+                <img src="~/img/logo2.png" alt="" class="login-image">
+                <form method="post" asp-page-handler="Login" class="login-form">
+                    <p class="sesion">Iniciar Sesión</p>
+                    @if (!ModelState.IsValid)
+                    {
+                        <div class="error_login">
+                            <ul>
+                                @foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                                    <p>@error.ErrorMessage</p>
+                                }
+                            </ul>
+                        </div>
+                    }
+                    <div class="input-group">
+                        <label for="Email">Correo Electronico</label>
+                        <input type="text" id="Email" asp-for="Email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="Password">Contraseña</label>
+                        <input type="password" id="Password" asp-for="Password" required>
+                    </div>
+                    <button type="submit" class="login-btn">Ingresar</button>
+                    <a href="RegistroUsuario" class="login-btn-2">Registrarme</a>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>

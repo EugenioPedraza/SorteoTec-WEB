@@ -1,0 +1,44 @@
+﻿
+@page
+@model Registro_Ciclo0.Pages.AdminModel
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "_AdminLayout";
+}
+<h2 class="site_font">Admin Dashboard</h2>
+
+
+<script>
+    window.genderChartData = @Html.Raw(Json.Serialize(Model.GenderDataJson));
+    window.ageChartData = @Html.Raw(Json.Serialize(Model.AgeDataJson));
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="charts-container site_font" > 
+    <div class="chart-container"> 
+        <p class="chartTitle site_font">Géneros de usuarios</p>
+        <canvas id="genderChart" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-container">
+        <p class="chartTitle site_font">Edad de usuarios</p>
+        <canvas id="ageChart" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-container">
+        <p class="chartTitle site_font">CHART</p>
+        <canvas id="template" width="400" height="400"></canvas>
+    </div>
+        <div class="chart-container">
+        <p class="chartTitle site_font">CHART</p>
+        <canvas id="template" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-container">
+        <p class="chartTitle site_font">CHART</p>
+        <canvas id="template" width="400" height="400"></canvas>
+    </div>
+    <div class="chart-container">
+        <p class="chartTitle site_font">CHART</p>
+        <canvas id="template" width="400" height="400"></canvas>
+    </div>
+    <script src="~/js/chartsScript.js"></script>
+</div>

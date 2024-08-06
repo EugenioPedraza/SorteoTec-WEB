@@ -1,0 +1,118 @@
+﻿@page
+@model Registro_Ciclo0.PremiosModel
+@{
+}
+
+
+@if (!string.IsNullOrEmpty(Model.TransactionDetailsMessage))
+{
+    <div class="alert alert-success">
+        @Model.TransactionDetailsMessage
+    </div>
+}
+
+<body class="premios site_font page_size">
+    <form method="post" asp-action="RedeemPrize" asp-controller="CanjearPremios">
+        <div class="container mt-5">
+            <h2 class="mb-4 title">Premios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/xbox.webp" alt="Premio 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Xbox Series X</h5>
+                            <p class="card-text">100,000 Gemas</p>
+                            <button type="submit" name="prize" value="XboxSeriesX" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/ps5.jpg" alt="Premio 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Playstation 5</h5>
+                            <p class="card-text">100,000 Gemas</p>
+                            <button type="submit" name="prize" value="Playstation5" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4 xbox_size">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/xbox_gold.jpg" alt="Premio 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Xbox Live Gold (3 Meses)</h5>
+                            <p class="card-text">4,200 Gemas</p>
+                            <button type="submit" name="prize" value="XboxLiveGold" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/play_plus.jpg" alt="Premio 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Playsation Plus (3 Meses)</h5>
+                            <p class="card-text">4,200 Gemas</p>
+                            <button type="submit" name="prize" value="PlaystationPlus" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/diner.webp" alt="Premio 5">
+                        <div class="card-body">
+                            <h5 class="card-title">2X1 en Dinero de X Vida</h5>
+                            <p class="card-text">10,000 Gemas</p>
+                            <button type="submit" name="prize" value="2X1Dinero" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card premios_size">
+                        <img class="card-img-top" src="~/img/boleto_2.webp" alt="Premio 6">
+                        <div class="card-body">
+                            <h5 class="card-title">10% de descuento en Aventurat</h5>
+                            <p class="card-text">3,000 Gemas</p>
+                            <button type="submit" name="prize" value="DescuentoAventurat" class="btn btn-primary">Canjear</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+
+
+            <div class="container mt-4">
+                <div class="col">
+                    <div class="col-md-6 site_font">
+                        <h3 class="title_canjear">Canjea el código de tu boleto y gana</h3>
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center site_font img_center">
+                        <div>
+                            <img src="~/img/boleto.jpeg" alt="Boleto Imagen" class="canjea-size mb-3">
+                            <div class="input-group-p mb-3">
+                                <div class="contenedor_premios">
+                                    <input type="text" name="gemAmount" class="form-control" placeholder="Ingresa la cantidad de gemas">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-primary" type="submit" asp-page-handler="AwardGems">Canjear</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>

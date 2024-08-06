@@ -1,0 +1,81 @@
+﻿@page
+@model Registro_Ciclo0.Pages.RegistroUsuario
+@{
+    <html>
+
+    <body>
+        <script src="https://unpkg.com/libphonenumber-js/bundle/libphonenumber-js.min.js"></script>
+        <section class="registro-tamano">
+            <div class="wrapper">
+                <form method="post" id="registro">
+                    <p class="registro">Registro</p>
+
+                    <div class="input-box">
+                        <div class="input-field">
+                            <input asp-for="Input.Nombre" type="text" placeholder="Nombre" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.PrimerApellido" type="text" placeholder="Apellido Paterno" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.SegundoApellido" type="text" placeholder="Apellido Materno" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-field">
+                            <select asp-for="Input.Genero" required>
+                                <option value="">Seleccionar género...</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otro">Otro</option>
+                                <option value="Prefiero no decir">Prefiero no decir</option>
+                            </select>
+                            <i class='bx bx-venus-mars bxs-user'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.FechaNacimiento" type="date" required>
+                            <i class='bx bx-calendar'></i>
+                        </div>
+
+                        <div class="input-field">
+                            <input asp-for="Input.Direccion" type="text" placeholder="Dirección" required>
+                            <i class='bx bx-home'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.Telefono" type="text" placeholder="Teléfono de 10 dígitos" required pattern="^\d{10}$" title="Por favor ingrese un número de 10 dígitos">
+                            <i class='bx bxs-phone'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.Usuario" type="text" placeholder="Usuario" required>
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.Correo" type="email" placeholder="Correo" required>
+                            <i class='bx bx-envelope'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.Password" type="password" placeholder="Contraseña" required>
+                            <i class='bx bx-lock-alt'></i>
+                        </div>
+                        <div class="input-field">
+                            <input asp-for="Input.Confirm_Password" type="password" placeholder="Confirmar Contraseña" required>
+                            <i class='bx bx-lock-alt'></i>
+                        </div>
+                    </div>
+
+                    <label>
+                        <input type="checkbox" id="terms" name="terms"> Declaro que la información ingresada es correcta y verdadera
+                    </label>
+                    <br />
+                    <button type="submit" class="login-btn">Registrarme</button>
+                    <br />
+                    <br />
+                    <span asp-validation-for="Input.Confirm_Password" class="text-danger center-text"></span>
+                </form>
+            </div>
+        </section>
+    </body>
+
+    </html>
+}

@@ -1,0 +1,14 @@
+﻿@model int?
+
+@if (Model.HasValue)
+{
+
+    <li class="nav-item alignment background-gem">
+        <img src="~/img/emerald.png" alt="Gemas" width="35px" height="35px" />
+    </li>
+    <li class="alignment gem-number">
+        <div>
+            <p class="gem-count">@Model</p>
+        </div>
+    </li>
+}
